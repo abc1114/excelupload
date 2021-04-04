@@ -53,7 +53,7 @@ def main():
         host="223.194.46.212",
         user="root",
         passwd="12345!",
-        database="knowhow2",
+        database="knowhow3",
         charset='utf8'
     )
 
