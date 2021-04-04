@@ -113,6 +113,7 @@ def main():
 
     while True:
         filename = input("1. 엑셀파일명 입력: ")
+        #파일이 있을 시
         if fileCheck(filename) is True:
             excel_to_list(filename)
             del(result[0])
@@ -128,7 +129,8 @@ def main():
             cursor.executemany(sql, result)
             conn.commit()
             print("완료")
-
+            break
+        #파일이 없을 시
         else:
             print("파일존재x")
             break
